@@ -1,7 +1,7 @@
 const { Sequelize } = require('sequelize');
 const movieModel = require('../model/movie');
 
-const sequelize = new Sequelize('cine','postgres',process.env.DB_PASSWORD,{
+const sequelize = new Sequelize('DB_NAME_HERE','DB_USER_HERE','DB_PASSWORD_HERE',{
     host:'localhost',
     dialect:'postgres'
 });

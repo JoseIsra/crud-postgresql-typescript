@@ -5,6 +5,9 @@ require('dotenv').config();
 require('./dbconfig/dbconfig');
 
 
+app.use(express.json());
+
+
 app.use('/api',require('./routes/api'))
 
 app.listen(8080, ()=> {
